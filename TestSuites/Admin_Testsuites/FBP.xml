@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="preserve-order Suite" parallel="false" thread-count="5">
+
+<listeners>
+<listener class-name="com.tt.utility.ListenerTest"/>
+</listeners>
+	<test name="tests">
+		<parameter name="browser" value="firefox" />
+<!-- Verify the FBP Radio Button in Property Defaults and Enable the FBP
+Add New Rate Plan and Verify whether FBP is Enabled or not
+Verify the Room Rate for the Child Rateplan without syncing the BAR whether FBP is applied correctly or not
+Verify If FBP enabled, cascade yield control function in the rate grid will no longer work
+Verify whether the new rate is instantly available on the Rate Grid after enabling FBP with Adj Type: Flat Amount
+FBP New Booking      						
+FBP Modify Booking
+FBP Cancel Booking
+Verfy FBP formula does not work when the selected dates are overlapping existing dates
+Verify whether the new rate is instantly available on the Rate Grid after enabling FBP with Adj Type: Percentage
+Verify Celing Amount should reflect in the Rate Grid and Booking Engine when the  Room Rate reaches the Threshold value
+Verfiy the Room Rate by giving only the specific Days in Manage Formula Based Pricing
+Verify whether the rates are populated correct as per the discount when we update the rate as “0” in rate grid for the request rate plan for the date range -->
+
+		<classes>
+			<class name="com.tt.BE.TC_IBE_Config_Standard" />
+			
+			<!-- <class name="com.tt.admin.TC_FBP" /> -->
+			<!-- <class name="com.tt.BE.TC_FBPBooking" />
+			<class name="com.tt.admin.TC_Manage_FBP"/> -->
+		</classes>
+	</test>
+</suite> 

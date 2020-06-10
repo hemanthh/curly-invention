@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="true" thread-count="8">
+	<test name="Test1">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.BE.TC_IBE_Config_Standard" />
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.admin.TC_OfferCode_Dates" />
+			<class name="com.tt.BE.TC_AccessCodeBooking" />
+		</classes>
+
+	</test>
+	<test name="Test2">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.admin.TC_SpecialRate_dates" />
+			<class name="com.tt.BE.TC_BookingAtSpecialRates" />
+		</classes>
+		
+	</test>
+
+	<test name="Test3">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.BE.TC_StandardModify" />
+		</classes>
+	</test>
+
+	<test name="Test4">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.BE.TC_IBE_Config_Standard" />
+			<class name="com.tt.BE.TC_ClasicFlow" />
+		</classes>
+	</test>
+
+	<test name="Test5">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.BE.TC_IBE_Config_Standard" />
+			<class name="com.tt.BE.TC_Multiroom" />
+		</classes>
+	</test>
+
+	<test name="Test6">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.BE.TC_IBE_Config_Yankee" />
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.BE.TC_YankeeModify" />
+		</classes>
+	</test>
+
+	<test name="Test7">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.BE.TC_IBE_Config_Yankee" />
+			<class name="com.tt.BE.TC_YankeeClassicflow" />
+		</classes>
+	</test>
+	
+	<test name="Test8">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection"/>
+			<class name="com.tt.admin.TC_Add_NewProperty" />
+		</classes>
+	</test>
+	
+	
+
+</suite>

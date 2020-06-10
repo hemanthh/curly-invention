@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="preserve-order Suite" parallel="false"
+	thread-count="2">
+	
+	<test name="Yankee New,Modify,Cancel Booking">
+		<parameter name="browser" value="iexplorer" />
+		<classes>
+				<class name="com.tt.BE.TC_IBE_Config_Yankee" />
+			<class name="com.tt.BE.TC_YankeeFlow_New_Modify_CancelBooking" />
+
+		</classes>
+	</test>
+	<test name="Standard New,Modify,Cancel Booking">
+		<parameter name="browser" value="iexplorer" />
+		<classes>
+
+			<class name="com.tt.BE.TC_IBE_Config_Standard"/>
+			<class name="com.tt.BE.TC_Standard_New_Modfiy_CancelBooking" />
+		</classes>
+	</test>
+	<test name="MultiRoomBooking">
+		<parameter name="browser" value="iexplorer" />
+		<classes>
+
+			<class name="com.tt.BE.TC_Multiroom" />
+		</classes>
+	</test>
+
+	<test name="Booking with AccessCode	">
+		<parameter name="browser" value="iexplorer" />
+		<classes>
+
+			
+			<class name="com.tt.admin.TC_OfferCode_Dates" />
+			<class name="com.tt.BE.TC_AccessCodeBooking" />
+		</classes>
+	</test>
+
+	<test name="Booking special Rates	">
+		<parameter name="browser" value="iexplorer" />
+		<classes>
+			
+			<class name="com.tt.admin.TC_SpecialRate_dates" />
+			<class name="com.tt.BE.TC_BookingAtSpecialRates" />
+		</classes>
+	</test>
+	<test name="PromoURLBooking	">
+		<parameter name="browser" value="iexplorer" />
+		<classes>
+		
+			<class name="com.tt.admin.TC_SpecialRate_dates" />
+			<class name="com.tt.BE.TC_PromoURLBooking" />
+		</classes>
+	</test>
+
+	
+	
+</suite> 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="Reusable_BE.TC_Mobile_New_Modify_CancelBooking">
+        <methods>
+          <include name="Flow"/>
+          <include name="Beforem"/>
+          <include name="deleteLog"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Reusable_BE.TC_Mobile_New_Modify_CancelBooking -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

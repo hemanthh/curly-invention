@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="preserve-order Suite" parallel="false"
+	thread-count="5">
+	
+	
+		<test name="tests" >
+        <parameter name="browser" value="chrome"/>
+
+        <classes>
+			  <!-- <class name="com.tt.admin.TC_Admin_Login" />
+			       <class name="com.tt.admin.TC_Brand_Selection"/>
+			       <class name="com.tt.admin.TC_Select_Property" /> 
+			       <class name="com.tt.admin.TC_PropertyYieldRestrictions" />  -->
+			       
+
+		</classes>
+	</test> 
+	
+	<!-- Does not work in  FF becasue the browser does not wait until the page loads and
+	 switches to admin to make changes. Need to request a fix for the weird popup message 
+	 while automating same day booking 
+	  -->
+	<test name="PropYieldRestBooking">
+		<parameter name="browser" value="firefox" />
+ 		 <classes>
+			<class name="Reusable_BE.TC_PropertyYieldRestrictions_Booking" /> 
+		</classes>  <!-- ran into cookie overflow in FF -->
+	</test>
+	
+	
+</suite> <!-- Suite -->

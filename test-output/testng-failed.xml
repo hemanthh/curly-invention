@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [preserve-order Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test name="tests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Reusable_BE.TC_Mobile_New_Modify_CancelBooking">
+        <methods>
+          <include name="getResult"/>
+          <include name="Flow" invocation-numbers="0 0"/>
+          <include name="Beforem"/>
+          <include name="deleteLog"/>
+          <include name="driverclose"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Reusable_BE.TC_Mobile_New_Modify_CancelBooking -->
+    </classes>
+  </test> <!-- tests(failed) -->
+</suite> <!-- Failed suite [preserve-order Suite] -->

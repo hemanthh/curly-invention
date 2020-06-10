@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="preserve-order Suite" parallel="false"
+	thread-count="5">
+	
+	
+		<test name="tests" >
+        <parameter name="browser" value="chrome"/>
+
+     <!--     -->  <classes>
+			  
+			  	<class name="com.tt.admin.TC_Admin_Login" />
+			    <class name="com.tt.admin.TC_Brand_Selection"/>
+			    <class name="com.tt.admin.TC_Select_Property" /> 
+			    <class name="com.tt.admin.TC_GuestPQ" /> 
+			       
+
+		</classes> 
+	</test> 
+	
+	
+	<test name="GuestPreferenceQuestoin">
+		<parameter name="browser" value="chrome" />
+ 		<!-- in the future create a reusable guest preference question test case class that 
+ 			jumps between admin and the BE  
+ 		
+ 		<classes>
+			<class name="Reusable_BE.TC_GuestPreferenceQuestion_Booking" /> 
+		</classes>     -->
+	</test>
+	
+	
+</suite> <!-- Suite -->

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="preserve-order Suite" parallel="false" thread-count="5" >
+	<!-- <test thread-count="5" name="Test"> -->
+<!-- 	        <parameter name="browser" value="chrome"/>
+ -->	
+	<test name="tests" >
+        <parameter name="browser" value="chrome"/>
+
+        <classes>
+			       
+			       <class name="com.tt.admin.TC_Admin_Login" />
+				   <class name="com.tt.admin.TC_Brand_Selection"/> 
+			       <class name="com.tt.admin.TC_Select_Property" /> 
+			       <class name="com.tt.admin.TC_Amenties" />
+			
+		</classes>
+	</test> <!-- Test -->
+		<!-- <test name="firefoxtests" preserve-order="true">
+        <parameter name="browser" value="firefox"/>
+
+		<classes>
+			<class name="com.tt.admin.TC_Browser_SetUp" />
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+
+		</classes>
+	</test> Test -->
+</suite> <!-- Suite -->

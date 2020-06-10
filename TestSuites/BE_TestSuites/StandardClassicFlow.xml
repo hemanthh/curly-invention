@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="preserve-order Suite" parallel="false" thread-count="5">
+
+	<test name="tests">
+		<parameter name="browser" value="chrome" />
+
+               <!-- Standard Flow -->
+
+
+		<classes>
+		   
+	        <class name="com.tt.BE.TC_IBE_Config_Standard" />  
+			<!-- <class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" /> -->
+			
+			
+			<class name="com.tt.BE.TC_ClasicFlow" /> 
+			
+			
+			
+			
+
+		</classes>
+	</test>
+</suite> 

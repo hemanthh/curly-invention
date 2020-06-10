@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="preserve-order Suite" parallel="false"
+	thread-count="2">
+
+<test name="tests" >
+        <parameter name="browser" value="firefox"/>
+
+        <classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection"/>
+			<class name="com.tt.admin.TC_Select_Property" />
+
+		  <!--   <class name="com.tt.admin.TC_Add_NewProperty" />  -->
+			<class name="com.tt.admin.TC_PropertyDefaults" /> 
+			<class name="com.tt.admin.TC_PropertyMaster" />
+			<class name="com.tt.admin.TC_Property_Branding" />
+			<class name="com.tt.admin.TC_Create_Property_Channel" />
+			<class name="com.tt.admin.TC_deleterooms"/>
+			<class name="com.tt.admin.TC_AboutPRoom" />   
+		    <class name="com.tt.admin.TC_AboutPDining" />   
+			<class name="com.tt.admin.TC_AboutNearByAirPort" /> 
+		    <class name="com.tt.admin.TC_AboutNearAttractions" />  
+			<class name="com.tt.admin.TC_TaxesAndFees" /> 
+			<class name="com.tt.admin.TC_Amenties" />
+			<class name="com.tt.admin.TC_PaymentGateway" /> 
+			<class name="com.tt.admin.TC_CallCenterSettings" /> 
+			<class name="com.tt.admin.TC_GuestPQ" />
+			<class name="com.tt.admin.TC_Create_RoomType" />   
+			<class name="com.tt.admin.TC_RoomHierarchy" />  
+			<class name="com.tt.admin.TC_Policies" />
+			<class name="com.tt.admin.TC_SmartPolicies" />
+			<class name="com.tt.admin.TC_Add_Ons" />
+			<class name="com.tt.admin.TC_RatePlanCategories" /> 
+			<class name="com.tt.admin.TC_RateGrid" />
+			<class name="com.tt.admin.TC_AddNewRatePlan" /> 
+			
+		</classes>
+	</test> 
+	<test name="Yankee New,Modify,Cancel Booking">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.BE.TC_IBE_Config_Yankee" />
+			
+			<class name="Reusable_BE.TC_YankeeFlow_New_Modify_CancelBooking" />
+
+		</classes>
+	</test>
+	<test name="Standard New,Modify,Cancel Booking">
+		<parameter name="browser" value="firefox" />
+		<classes>
+
+			<class name="com.tt.BE.TC_IBE_Config_Standard" />
+			<class name="Reusable_BE.TC_Standard_New_Modfiy_CancelBooking" />
+		</classes>
+	</test>
+	<test name="MultiRoomBooking">
+		<parameter name="browser" value="firefox" />
+		<classes>
+
+			<class name="com.tt.BE.TC_Multiroom" />
+		</classes>
+	</test>
+	<test name="Booking special Rates and PromoURLBooking	">
+		<parameter name="browser" value="firefox" />
+		<classes>
+		
+			
+			<class name="com.tt.admin.TC_SpecialRate_dates" />
+			<class name="com.tt.BE.TC_BookingAtSpecialRates" />
+			<class name="com.tt.BE.TC_PromoURLBooking" />
+
+		</classes>
+	</test>
+	<test name="Booking with AccessCode	">
+		<parameter name="browser" value="firefox" />
+		<classes>
+
+		
+			<class name="com.tt.admin.TC_OfferCode_Dates" />
+			<class name="Reusable_BE.TC_AccessCode_Booking" />
+		</classes>
+	</test>
+	
+	<!-- <test name="CallCenter New,Modify,Cancel Booking">
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+			
+			
+			<class name="Reusable_BE.TC_CallCenter_New_Modify_CancelBooking" />
+		</classes>
+
+	</test> -->
+	<test name="Mobile ew,Modify,Cancel Booking">
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+			
+			
+			<class name="Reusable_BE.TC_Mobile_New_Modify_CancelBooking" />
+		</classes>
+
+	</test>
+	
+
+	<!-- <test name="AlternateProperties	">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.BE.TC_IBE_Config_Standard" />
+		
+			<class name="com.tt.BE.TC_AlternateProperties_Booking" />
+
+		</classes>
+	</test>
+
+	<test name="FBP Test Cases">
+		<parameter name="browser" value="firefox" />
+		<classes>
+
+			
+			<class name="com.tt.admin.TC_FBP" />
+		</classes>
+	</test>
+
+	<test name="Group Block Test Cases	">
+		<parameter name="browser" value="firefox" />
+		<classes>
+
+			
+			<class name="com.tt.admin.TC_Group_Blocks" />
+		</classes>
+	</test>
+
+	<test name="Compound Access Code">
+		<parameter name="browser" value="firefox" />
+		<classes>
+
+			<class name="com.tt.admin.TC_CompoundAccessCodes" />
+			<class name="com.tt.BE.TC_CompoundAccessCodeBooking"/> 
+			<class name="com.tt.admin.TC_InteractiveReports_ComoundAccess" />
+
+		</classes>
+	</test> -->
+
+</suite> 

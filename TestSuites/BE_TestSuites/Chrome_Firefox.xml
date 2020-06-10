@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="preserve-order Suite" parallel="false"
+	thread-count="2">
+	<test name="tests1">
+		<parameter name="browser" value="firefox" />
+		<classes>
+
+			<class name="com.tt.BE.TC_IBE_Config_Standard" />
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.BE.TC_ClasicFlow" />
+		</classes>
+	</test>
+
+	<test name="tests2">
+		<parameter name="browser" value="firefox" />
+		<classes>
+
+			<class name="com.tt.BE.TC_Multiroom" />
+		</classes>
+	</test>
+
+	<test name="tests3">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.admin.TC_OfferCode_Dates" />
+			<class name="com.tt.BE.TC_AccessCodeBooking" />
+		</classes>
+	</test>
+
+	<test name="tests4">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.admin.TC_SpecialRate_dates" />
+			<class name="com.tt.BE.TC_BookingAtSpecialRates" />
+		</classes>
+	</test>
+	<test name="tests5">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.admin.TC_SpecialRate_dates" />
+			<class name="com.tt.BE.TC_PromoURLBooking" />
+		</classes>
+	</test>
+
+	<test name="tests6">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.BE.TC_StandardModify" />
+		</classes>
+	</test>
+
+	<test name="tests7">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.BE.TC_CancelBooking" />
+
+		</classes>
+	</test>
+
+	<test name="tests8">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.BE.TC_CallCenterBooking_Modify" />
+
+		</classes>
+	</test>
+	<test name="tests9">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.BE.TC_CallCenter_Cancellation" />
+
+		</classes>
+	</test>
+
+	
+	
+	<test name="tests10">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.BE.TC_IBE_Config_Yankee" />
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.BE.TC_YankeeModify" />
+
+		</classes>
+	</test>
+	
+	<test name="tests11">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.BE.TC_CancelBooking_Yankee" />
+
+		</classes>
+	</test>
+	
+	
+	<test name="tests12">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.BE.TC_YankeeClassicflow" />
+
+		</classes>
+	</test>
+	
+	<test name="tests13">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.MB_Test.TC_MobileBooking" />
+
+		</classes>
+	</test>
+
+	<test name="tests14">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.MB_Test.TC_MobileModifyBooking" />
+
+		</classes>
+	</test>
+
+	<test name="tests15">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.MB_Test.TC_MobileCancelBooking" />
+
+		</classes>
+	</test>
+	
+	<test name="tests16">
+		<parameter name="browser" value="chrome" />
+		<classes>
+
+			<class name="com.tt.BE.TC_IBE_Config_Standard" />
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.BE.TC_ClasicFlow" />
+		</classes>
+	</test>
+
+	<test name="tests17">
+		<parameter name="browser" value="chrome" />
+		<classes>
+
+			<class name="com.tt.BE.TC_Multiroom" />
+		</classes>
+	</test>
+
+	<test name="tests18">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.tt.BE.TC_IBE_Config_Standard" />
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.admin.TC_OfferCode_Dates" />
+			<class name="com.tt.BE.TC_AccessCodeBooking" />
+		</classes>
+	</test>
+
+	<test name="tests19">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.admin.TC_SpecialRate_dates" />
+			<class name="com.tt.BE.TC_BookingAtSpecialRates" />
+		</classes>
+	</test>
+	<test name="tests20">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.admin.TC_SpecialRate_dates" />
+			<class name="com.tt.BE.TC_PromoURLBooking" />
+		</classes>
+	</test>
+
+	<test name="tests21">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.BE.TC_StandardModify" />
+		</classes>
+	</test>
+
+	<test name="tests22">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.BE.TC_CancelBooking" />
+
+		</classes>
+	</test>
+
+	<test name="tests23">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.BE.TC_CallCenterBooking_Modify" />
+
+		</classes>
+	</test>
+	<test name="tests24">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.BE.TC_CallCenter_Cancellation" />
+
+		</classes>
+	</test>
+
+	
+	
+	<test name="tests25">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.tt.BE.TC_IBE_Config_Yankee" />
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.BE.TC_YankeeModify" />
+
+		</classes>
+	</test>
+	
+	<test name="tests26">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.BE.TC_CancelBooking_Yankee" />
+
+		</classes>
+	</test>
+	
+	
+	<test name="tests27">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.tt.BE.TC_YankeeClassicflow" />
+
+		</classes>
+	</test>
+	
+	<test name="tests28">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.tt.MB_Test.TC_MobileBooking" />
+
+		</classes>
+	</test>
+
+	<test name="tests29">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.MB_Test.TC_MobileModifyBooking" />
+
+		</classes>
+	</test>
+
+	<test name="tests30">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+			<class name="com.tt.MB_Test.TC_MobileCancelBooking" />
+
+		</classes>
+	</test>
+
+</suite> 

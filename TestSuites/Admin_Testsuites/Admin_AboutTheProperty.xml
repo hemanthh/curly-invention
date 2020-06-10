@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="preserve-order Suite" parallel="false" thread-count="5" >
+	<!-- <test thread-count="5" name="Test"> -->
+<!-- 	        <parameter name="browser" value="chrome"/>
+
+   		Note: The about property link only appears if GDS is enabled for the property 
+
+ -->	
+	<test name="tests" >
+        <parameter name="browser" value="msedge"/>
+
+        <classes>
+			<class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection"/>
+			<class name="com.tt.admin.TC_Select_Property" />
+			
+			<class name="com.tt.admin.TC_AboutTheProperty" />  
+						
+			
+			<!-- Can delete below lines as of 11/18/2019, able to use 
+			     the About The Property line to run below items
+			
+			
+			<class name="com.tt.admin.TC_AboutTheProperty" />  
+			
+			<class name="com.tt.admin.TC_deleterooms"/> 
+			
+		  	<class name="com.tt.admin.TC_AboutPRoom" />  
+		    <class name="com.tt.admin.TC_AboutPDining" />   
+			<class name="com.tt.admin.TC_AboutNearByAirPort" /> 
+		    <class name="com.tt.admin.TC_AboutNearAttractions" /> 
+		    
+		    -->
+		    
+		   
+					
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

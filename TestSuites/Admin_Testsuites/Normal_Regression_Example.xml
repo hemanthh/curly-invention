@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="preserve-order Suite" parallel="false"
+	thread-count="5">
+
+<test name="tests" >
+        <parameter name="browser" value="chrome"/>
+        
+        <!-- README:
+        iexplorer  does not seem to work , use msedge-->
+		   <!-- Do not run <class name="com.tt.admi n.TC_Add_NewProperty" />  
+		   
+		   Need to Create a proper TC Class that creates a brand
+		   using the following classes:
+		   	<class name="com.tt.admin.TC_PropertyEdit" /> 
+		   	<class name="com.tt.admin.TC_PropertyDefaults" /> 
+			<class name="com.tt.admin.TC_PropertyMaster" /> 
+			
+			https://traveltripper.jira.com/browse/CANDYBAR-5114
+			is effecting this 
+			<class name="Reusable_BE.TC_PropertyYieldRestrictions_Booking" /> 
+			
+			
+			https://traveltripper.jira.com/browse/STARGAZER-13352
+			is effecting com.tt.admin.TC_Policies on edge 
+			 --> 
+			 
+			 
+     	  <classes>
+     	    
+     	  <!-- -->
+			<class name="com.tt.admin.TC_Admin_Login" />
+		 	<class name="com.tt.admin.TC_Brand_Selection"/>
+			<class name="com.tt.admin.TC_Select_Property" />
+        
+        	  
+			<class name="com.tt.admin.TC_Property_Branding" />
+			
+				
+			
+			<class name="com.tt.admin.TC_Create_Property_Channel" />  
+			
+			<class name="com.tt.admin.TC_EmailRetargeting" />  
+			
+			   
+			<class name="com.tt.admin.TC_AboutTheProperty" />  
+			
+			
+					       
+			<class name="com.tt.admin.TC_TaxesAndFees" /> 
+			<class name="com.tt.admin.TC_AddOnTaxes" /> 
+			
+			 
+			<class name="com.tt.admin.TC_RatePlanTaxes" /> 
+			
+			<class name="com.tt.admin.TC_EmailRetargeting" />  
+			
+			<class name="com.tt.admin.TC_Amenties" /> 
+			
+			<class name="com.tt.admin.TC_PaymentGateway" /> 
+			
+			<class name="com.tt.admin.TC_CardSurcharge" /> 
+			
+			 <class name="com.tt.admin.TC_NearByAttraction"/> 
+			 
+			<class name="com.tt.admin.TC_CallCenterSettings" /> 
+			
+			<class name="com.tt.admin.TC_GuestPQ" />  
+			
+	        <class name="com.tt.admin.TC_Create_RoomType" />  
+			<class name="com.tt.admin.TC_RoomHierarchy" /> 
+			
+			
+			
+			
+			<!--    -->	 
+			<class name="com.tt.admin.TC_Policies" />
+			<class name="com.tt.admin.TC_SmartPolicies" />
+			
+			
+		
+			<class name="com.tt.admin.TC_Add_Ons" />   
+	    	<class name="com.tt.admin.TC_RatePlanCategories" />
+	  
+	    	<class name="com.tt.admin.TC_AddNewRatePlan" /> 
+	    	
+	    	
+	    	
+			<class name="com.tt.admin.TC_RateGrid" />
+			<class name="com.tt.admin.TC_ManageAccessCode" /> 
+			
+			
+			
+		</classes>  
+		
+		
+		
+	</test> 
+	
+	
+	<!--  
+	<test name="PropertyYieldRestrictionsBooking">
+		<parameter name="browser" value="msedge" />
+    	<classes>
+			<class name="Reusable_BE.TC_PropertyYieldRestrictions_Booking" /> 
+		</classes> 
+	</test>
+	-->
+	
+	
+	
+     
+   
+	<test name="Yankee New,Modify,Cancel Booking">
+		<parameter name="browser" value="chrome" />
+		
+		 <classes>
+		 	<class name="com.tt.BE.TC_IBE_Config_Yankee" />
+			<class name="Reusable_BE.TC_YankeeFlow_New_Modify_CancelBooking" />
+		</classes> 
+		
+	</test>
+	
+	 
+	 <test name="Standard New,Modify,Cancel Booking">
+		<parameter name="browser" value="chrome" />
+		
+	 <classes>
+			<class name="com.tt.BE.TC_IBE_Config_Standard" /> 
+			<class name="Reusable_BE.TC_Standard_New_Modfiy_CancelBooking" /> 
+		</classes>  
+		
+	</test>
+	
+	
+	<test name="MultiRoomBooking">
+		<parameter name="browser" value="chrome" />
+    <classes>
+		    <class name="com.tt.BE.TC_Multiroom" />   
+		</classes> 
+	</test>
+	
+	       
+	
+
+	<test name="Booking special Rates and PromoURLBooking	">
+		<parameter name="browser" value="chrome" />
+		
+	   <classes>
+		  <class name="com.tt.admin.TC_SpecialRate_dates" />
+			<class name="com.tt.BE.TC_BookingAtSpecialRates" />
+			 <class name="com.tt.BE.TC_PromoURLBooking" />  
+		</classes> 
+		
+	</test>
+
+
+
+	 
+	<test name="Booking with AccessCode">
+		<parameter name="browser" value="chrome" />
+		 <classes>
+			 <class name="com.tt.admin.TC_OfferCode_Dates" />
+			<class name="Reusable_BE.TC_AccessCode_Booking" />  
+		</classes> 
+	</test>
+	
+  
+	  <test name="CallCenter New,Modify,Cancel Booking">
+		<parameter name="browser" value="chrome" />
+
+		 <classes>
+			<class name="Reusable_BE.TC_CallCenter_New_Modify_CancelBooking" />
+		</classes>
+
+	</test>  
+	
+	<test name="Mobile ew,Modify,Cancel Booking">
+		<parameter name="browser" value="chrome" />
+
+		 <classes>
+			<class name="Reusable_BE.TC_Mobile_New_Modify_CancelBooking" />
+		</classes>  
+
+	</test>  
+	
+	
+	
+	
+
+</suite> 

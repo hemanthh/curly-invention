@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="preserve-order Suite" parallel="tests"
+	thread-count="5">
+	<test name="test1">
+		<parameter name="browser" value="iexplorer" />
+		<classes>
+			<!-- <class name="com.tt.BE.TC_IBE_Config_Standard" /> -->
+		
+			<class name="com.tt.BE.TC_AlternateProperties_Booking" />
+			
+		</classes>
+
+	</test>
+</suite> 

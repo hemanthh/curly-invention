@@ -1,0 +1,10 @@
+2020-05-13 10:26:57,259 [main] ERROR com.tt.admin.TC_RateGrid - Unable to  Property Dining org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.all({By.xpath: //div[@class='cc-compliance']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PEGS2', ip: '192.168.225.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: driver.version: RemoteWebDriver
+2020-05-13 10:27:01,306 [main] ERROR com.tt.admin.TC_RateGrid - Unable to  Property Dining org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.all({By.xpath: //div[@class='cc-compliance']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PEGS2', ip: '192.168.225.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: driver.version: RemoteWebDriver

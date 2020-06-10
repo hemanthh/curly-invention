@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="preserve-order Suite" parallel="false"
+	thread-count="2">
+
+	<test name="DPR">
+
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+
+
+			<!-- <class name="com.tt.BE.TC_IBE_Config_Standard" /> -->
+			
+			<class name="com.tt.admin.TC_DPRTestCases_FlatAmount" />
+			<class name="com.tt.admin.TC_DPRTestCases_Percentage" />
+			<class name="com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage" />
+			<class name="com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat" />
+
+			<class name="com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic" />
+
+
+		</classes>
+	</test>
+	
+
+</suite> 
